@@ -453,7 +453,7 @@ The ALTO file should contain a Description/sourceImageInformation/fileName tag f
                     coords = tuple(map(float, baseline.split(" ")))
                     line.baseline = tuple(zip(coords[::2], coords[1::2]))
                 except ValueError:
-                    msg = ("Invalid baseline %s in {filen} line {linen}" %
+                    msg = ("Invalid baseline %s in %s line %d" %
                            (baseline, self.file.name, lineTag.sourceline))
                     logger.warning(msg)
                     if self.report:
@@ -472,7 +472,7 @@ The ALTO file should contain a Description/sourceImageInformation/fileName tag f
                 coords = tuple(map(float, polygon.get("POINTS").split(" ")))
                 line.mask = tuple(zip(coords[::2], coords[1::2]))
             except ValueError:
-                msg = "Invalid polygon %s in {filen} line {linen}" % (polygon, self.file.name, lineTag.sourceline)
+                msg = "Invalid polygon %s in %s line %d" % (polygon, self.file.name, lineTag.sourceline)
                 logger.warning(msg)
                 if self.report:
                     self.report.append(msg)
