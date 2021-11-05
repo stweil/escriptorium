@@ -2897,15 +2897,3 @@ msgstr "Sie haben noch keine Einladungen verschickt."
 #: homepage_example/additional_footer.html
 msgid "Powered by"
 msgstr "Mit Hilfe von"
-
-#~ msgid "Show onboarding"
-#~ msgstr "Onboarding anzeigen"
-
-#~ msgid "Errors"
-#~ msgstr "Fehler"
-
-#~ msgid "Number of errors/Total number of characters"
-#~ msgstr "Anzahl der Fehler/Gesamtzahl der Zeichen"
-
-#~ msgid "Reset onboarding"
-#~ msgstr "Starthilfe zurücksetzen"
